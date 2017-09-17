@@ -8,5 +8,12 @@
                 <link rel="stylesheet" href="/pos_four_pane_layout/static/src/css/pos.css" />
             </xpath>
         </template>
+        <template id="assets_backends_js" name="pos_four_pane_layout assests" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+               
+               <script type="text/javascript" src="/pos_four_pane_layout/static/src/js/main.js"></script>  
+               <script type="text/javascript" src="/pos_four_pane_layout/static/src/js/widget.js"></script>
+            </xpath>
+        </template>        
     </data>
 </openerp>
