@@ -61,10 +61,6 @@ function pos_test_1_widget(instance, module){
             this._super(parent, options);
             
         },
-        renderElement: function() {
-            var self = this;
-            this._super();    
-        },
         events: {
             'click button#test-warning': function(){
                     this.pos_widget.screen_selector.show_popup('error',{
@@ -84,10 +80,6 @@ function pos_test_1_widget(instance, module){
         init: function(parent, options){
             this._super(parent, options);
             
-        },
-        renderElement: function() {
-            var self = this;
-            this._super();    
         },
         events: {
             'click button#test-client': function(){

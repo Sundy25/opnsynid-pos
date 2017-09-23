@@ -2,9 +2,41 @@
 <templates id="template" xml:space="preserve">
     <t t-extend="ClientListScreenWidget">
         <t t-jquery="span.new-customer" t-operation="after">
-            <span class="button">
+            <span class="button select-table">
                 Select Table
             </span>
         </t>
     </t>
+    
+    <t t-name="FloorPopupWidget">
+        <div class="modal-dialog custom-dialog">
+            <div class="popup" >
+                    <div class="button" id="floor-cancel">
+                        CANCEL
+                    </div>
+            </div>
+        </div>
+    </t>       
+    
+    <t t-name="FloorButtonWidget">
+        <button class="floor-button">
+            <t t-esc="widget._floor.name"/>
+        </button>
+    </t>     
+
+    <t t-name="TablePopupWidget">
+        <div class="modal-dialog custom-dialog">
+            <div class="popup" >
+                    <div class="button" id="table-cancel">
+                        CANCEL
+                    </div>
+            </div>
+        </div>
+    </t>       
+
+    <t t-name="TableButtonWidget">
+        <button class="table-button">
+            <t t-esc="widget.table.name"/>
+        </button>
+    </t>     
 </templates>
